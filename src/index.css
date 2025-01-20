@@ -1,0 +1,130 @@
+.title{
+  text-align: center;
+  margin: 20px;
+  font-size: 80px;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; 
+  color: #ffdd00;
+  text-shadow: 
+    -3px -3px 0px #ff4500,
+    3px -3px 0px #ff4500,
+    -3px 3px 0px #ff4500,
+    3px 3px 0px #ff4500,
+    2px 2px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.title:hover{
+  animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% { transform: rotate(-2deg) translateX(-5px); }
+  25% { transform: rotate(2deg) translateX(5px); }
+  50% { transform: rotate(-2deg) translateX(-5px); }
+  75% { transform: rotate(2deg) translateX(5px); }
+  100% { transform: rotate(-2deg) translateX(0); }
+}
+
+body{
+  background-color: rgb(49, 127, 158);
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  border: solid black;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(155, 151, 151);
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 15px;
+}
+
+.input{
+  width: 350px;
+  height: 100px;
+  box-shadow: 5px 5px 5px;
+  border: solid black;
+  border-radius: 20px;
+  text-align: right;
+  font-size: 80px;
+  font-family: Xenara;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+button{
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  margin: 5px;
+  border-radius: black solid;
+  box-shadow: 5px 5px 5px;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.clear{
+  width: 170px;
+  background-color: rgb(210, 81, 81);
+}
+.clear:hover{
+  background-color: rgb(167, 29, 29);
+}
+.equal{
+  background-color: rgb(32, 133, 32);
+}
+.equal:hover{
+  background-color: rgb(15, 112, 15);
+}
+.divide, .multiply, .minus, .add{
+  background-color: rgb(204, 215, 122);
+}
+.divide:hover, .multiply:hover, .minus:hover, .add:hover{
+  background-color: rgb(141, 149, 85);
+}
+.percentage, .decimal{
+  background-color:#87CEFA;
+}
+.percentage:hover, .decimal:hover{
+  background-color:#6fa7c9;
+}
+
+.zero{
+  width: 170px;
+  background-color: #FFB6C1;
+}
+.zero:hover{
+  background-color: #ca9199;
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine{
+  background-color: #FFB6C1;
+}
+.one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover,.eight:hover,.nine:hover{
+  background-color: #ca9199;
+}
+
+
+.pointer{
+  position: absolute;
+  z-index: 0; 
+  bottom: -50px; 
+  right: -100px; 
+  transform: rotate(15deg); 
+  pointer-events: none; 
+  width: 700px;
+  height: 700px;
+}
+.anya{
+  position: absolute;
+  z-index: 0; 
+  bottom: -70px; 
+  left: -100px; 
+  pointer-events: none; 
+  width: 700px;
+  height: 700px;
+}
