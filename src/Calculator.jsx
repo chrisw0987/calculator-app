@@ -46,7 +46,7 @@ function Calculator() {
     }
 
     return(<div className="container">
-        <input className="input" type='text' value={currentValue} readOnly/><br/>
+        <input className="input" type='text' value={currentValue} readOnly style={{ maxWidth: "100%" }}/><br/>
         <span>
             <button className="clear" onClick={handleClear}>CLEAR</button>
             <button className="percentage" onClick={()=>handlePercentage()}>%</button>
